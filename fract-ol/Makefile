@@ -1,7 +1,7 @@
 NAME := fractol
 
 CC := cc
-CFLAGS := -Wall -Werror-Wextra  -g3 -I./include
+CFLAGS := -Wall -Werror -Wextra  -g3 -I./include
 MLX_PATH := ./mlx_linux
 
 SRCS := main.c
