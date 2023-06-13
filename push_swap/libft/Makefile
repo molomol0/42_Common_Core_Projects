@@ -6,7 +6,7 @@
 #    By: marvin <marvin@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/05/03 15:44:16 by jdenis            #+#    #+#              #
-#    Updated: 2023/06/06 14:36:38 by marvin           ###   ########.fr        #
+#    Updated: 2023/06/12 17:35:16 by marvin           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -52,13 +52,15 @@ SRCS	=	type/ft_isalnum.c \
 			list/ft_lstdelone.c \
 			list/ft_lstclear.c \
 			list/ft_lstiter.c \
-			list/ft_lstmap.c
+			list/ft_lstmap.c \
+			gnl/get_next_line.c \
+			gnl/get_next_line_utils.c \
 
 OBJS	= ${SRCS:.c=.o}
 
 NAME	= libft.a
 
-CC		= cc
+CC		= @cc
 
 CFLAGS	= -Wall -Wextra -Werror
 

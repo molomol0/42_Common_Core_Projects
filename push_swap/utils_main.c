@@ -24,7 +24,6 @@ int	ft_strcmp(char *s1, char *s2)
 	return (s1[i] - s2[i]);
 }
 
-
 t_stack	*ft_lstnew_stack(size_t content)
 {
 	t_stack	*node;
@@ -64,15 +63,15 @@ void	ft_lstadd_front_stack(t_stack **lst, t_stack *new)
 	*lst = new;
 }
 
-void printf_list(t_stack *list)
-{
-	while(list != NULL)
-	{
-		printf("%ld", list->content);
-		list = list->next;
-		if (list == NULL)
-			printf("\n");
-		else
-			printf("->");
-	}
-}
+// void	printf_list(t_stack *list)
+// {
+// 	while(list != NULL)
+// 	{
+// 		printf("%ld", list->content);
+// 		list = list->next;
+// 		if (list == NULL)
+// 			printf("\n");
+// 		else
+// 			printf("->");
+// 	}
+// }
