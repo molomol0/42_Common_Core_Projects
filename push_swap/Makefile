@@ -43,7 +43,8 @@ HEADER_FILES = push_swap.h
 LIBFT_PATH = ./libft
 LIBFT = $(LIBFT_PATH)/libft.a
 
-all: $(NAME) $(CHECKER_NAME)
+all: $(NAME) 
+bonus: $(CHECKER_NAME)
 
 $(NAME): $(OBJS) $(HEADER_FILES) $(LIBFT)
 	@$(CC) $(CFLAGS) -o $(NAME) $(OBJS) -L$(LIBFT_PATH) -lft
