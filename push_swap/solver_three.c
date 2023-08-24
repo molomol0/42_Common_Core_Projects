@@ -16,14 +16,15 @@ void	solver_three(t_stack **stack)
 {
 	if (is_sort(stack))
 		return ;
-	if (((*stack)->content > (*stack)->next->content) && ((*stack)->next->content < (*stack)->next->next->content))
+	if (((*stack)->content > (*stack)->next->content)
+		&& ((*stack)->next->content < (*stack)->next->next->content))
 	{
 		if ((*stack)->content < (*stack)->next->next->content)
 			sa(stack);
 		else
 			ra(stack);
 	}
-	else if((*stack)->content < (*stack)->next->content)
+	else if ((*stack)->content < (*stack)->next->content)
 	{
 		if ((*stack)->content < (*stack)->next->next->content)
 		{

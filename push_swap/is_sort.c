@@ -19,7 +19,7 @@ int	is_sort(t_stack **stack)
 
 	curr1 = *stack;
 	curr2 = (*stack)->next;
-	while(curr2)
+	while (curr2)
 	{
 		if (curr1->content > curr2->content)
 			return (0);

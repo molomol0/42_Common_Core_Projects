@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
+/*   By: jdenis <jdenis@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/03 13:29:14 by jdenis            #+#    #+#             */
-/*   Updated: 2023/06/12 16:06:21 by marvin           ###   ########.fr       */
+/*   Updated: 2023/06/18 15:20:51 by jdenis           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ typedef struct s_list
 	struct s_list	*next;
 }					t_list;
 
-size_t					ft_atoi(const char *nptr);
+size_t				ft_atoi(const char *nptr);
 
 void				ft_bzero(void *s, size_t n);
 

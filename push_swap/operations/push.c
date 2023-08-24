@@ -14,7 +14,7 @@
 
 void	push(t_stack **stack_1, t_stack **stack_2)
 {
-	t_stack *tmp;
+	t_stack	*tmp;
 
 	if (*stack_2 == NULL)
 		return ;

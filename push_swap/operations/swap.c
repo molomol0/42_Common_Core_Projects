@@ -14,7 +14,7 @@
 
 void	swap(t_stack **stack)
 {
-	size_t tmp;
+	size_t	tmp;
 
 	if (*stack == NULL)
 		return ;

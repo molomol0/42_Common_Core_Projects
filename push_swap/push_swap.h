@@ -19,9 +19,8 @@
 
 typedef struct s_stack
 {
-	size_t	content;
-	struct 	s_stack *next;
-	
+	size_t			content;
+	struct s_stack	*next;
 }	t_stack;
 
 void		pa(t_stack **stack_a, t_stack **stack_b);
@@ -40,7 +39,7 @@ t_stack		*ft_lstnew_stack(size_t content);
 t_stack		*ft_lstlast_stack(t_stack *lst);
 int			ft_lstsize_stack(t_stack *lst);
 void		ft_lstadd_front_stack(t_stack **lst, t_stack *new);
-void 		printf_list(t_stack *list);
+void		printf_list(t_stack *list);
 int			ft_strcmp(char *s1, char *s2);
 void		free_all(t_stack **stack);
 t_stack		**list_to_stack(char **argv);
@@ -62,5 +61,6 @@ void		up(int key_nbr, t_stack **stack_a, t_stack **stack_b);
 int			get_mini_index(t_stack **stack, size_t key_nbr);
 void		solver_five(t_stack **stack);
 t_stack		**init(void);
+void		end_solver(t_stack **stack_a, t_stack **stack_b);
 
 #endif

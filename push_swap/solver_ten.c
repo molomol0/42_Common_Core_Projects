@@ -15,7 +15,7 @@
 void	solver_ten(t_stack **stack_a)
 {
 	t_stack	**stack_b;
-	
+
 	stack_b = (t_stack **)malloc(sizeof(t_stack *));
 	if (!stack_b)
 		return ;

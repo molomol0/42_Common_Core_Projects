@@ -14,7 +14,7 @@
 
 t_stack	**init(void)
 {
-	t_stack **stack;
+	t_stack	**stack;
 
 	stack = (t_stack **)malloc(sizeof(t_stack *));
 	if (!stack)

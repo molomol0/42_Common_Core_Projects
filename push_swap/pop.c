@@ -15,11 +15,11 @@
 size_t	minimum_stack(t_stack **stack)
 {
 	size_t	res;
-	t_stack *curr;
+	t_stack	*curr;
 
 	res = (*stack)->content;
 	curr = *stack;
-	while(curr)
+	while (curr)
 	{
 		if (curr->content < res)
 			res = curr->content;
@@ -31,11 +31,11 @@ size_t	minimum_stack(t_stack **stack)
 size_t	max_stack(t_stack **stack)
 {
 	size_t	res;
-	t_stack *curr;
+	t_stack	*curr;
 
 	res = (*stack)->content;
 	curr = *stack;
-	while(curr)
+	while (curr)
 	{
 		if (curr->content > res)
 			res = curr->content;
@@ -49,7 +49,7 @@ void	pop(t_stack **stack_a, t_stack **stack_b)
 	int	index;
 
 	index = get_pos(stack_a, minimum_stack(stack_a));
-	if (index <= ((ft_lstsize_stack(*stack_a) + 1 ) / 2))
+	if (index <= ((ft_lstsize_stack(*stack_a) + 1) / 2))
 	{
 		while (index - 1)
 		{
@@ -73,11 +73,11 @@ void	pop_big(t_stack **stack_a, t_stack **stack_b)
 	int	index;
 
 	index = get_pos(stack_b, max_stack(stack_b));
-	if (index <= ((ft_lstsize_stack(*stack_b) + 1 ) / 2))
+	if (index <= ((ft_lstsize_stack(*stack_b) + 1) / 2))
 	{
 		while (index - 1)
 		{
-			ra(stack_b);
+			rb(stack_b);
 			index--;
 		}
 	}
@@ -85,11 +85,9 @@ void	pop_big(t_stack **stack_a, t_stack **stack_b)
 	{
 		while (ft_lstsize_stack(*stack_b) - index + 1)
 		{
-			rra(stack_b);
+			rrb(stack_b);
 			index++;
 		}
 	}
 	pa(stack_a, stack_b);
 }
-
-

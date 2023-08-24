@@ -25,17 +25,17 @@ void	solver_big_big(t_stack **stack_a)
 	stack_b = (t_stack **)malloc(sizeof(t_stack *));
 	if (!stack_b)
 		return ;
+	*stack_b = NULL;
 	stack_k = create_stack_k(stack_a);
 	sort_k(stack_k);
 	while (comp != nb_chunk)
 	{
-		key_nbr = get_from_pos(stack_k, (ft_lstsize_stack(*stack_k) / nb_chunk) * comp);
+		key_nbr = get_from_pos(stack_k, (ft_lstsize_stack(*stack_k) / nb_chunk)
+				* comp);
 		while (minimum_stack(stack_a) <= key_nbr)
 			up(key_nbr, stack_a, stack_b);
 		comp++;
 	}
-	while (*stack_a != NULL)
-		pop(stack_a, stack_b);
-	while (*stack_b != NULL)
-		pop_big(stack_a, stack_b);
+	end_solver(stack_a, stack_b);
+	free_all(stack_k);
 }

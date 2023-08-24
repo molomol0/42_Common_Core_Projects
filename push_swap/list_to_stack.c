@@ -32,15 +32,6 @@ t_stack	**list_to_stack(char **argv)
 	t_stack	**stack;
 	t_stack	*curr;
 
-	// stack = (t_stack **)malloc(sizeof(t_stack *));
-	// if (!stack)
-	// 	return (NULL);
-	// *stack = (t_stack *)malloc(sizeof(t_stack));
-	// if (!(*stack))
-	// {
-	// 	free_all(stack);
-	// 	return (NULL);
-	// }
 	stack = init();
 	curr = *stack;
 	i = 1;
