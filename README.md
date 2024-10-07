@@ -17,4 +17,4 @@
 | [Cub3d](./Cub3d/)                 | <div align="center">125✅</div>  |  |
 | [CPP](./CPP/)                     | <div align="center">100✅</div>  |  |
 | [ft_irc](./ft_irc/)               | <div align="center">100✅</div>  |  |
-| [Inception](./Inception/)         | <div align="center">96✅</div>   | <div align="center">Mariadb failed on a reboot during a evaluation</div> |
+| [Inception](./Inception/)         | <div align="center">96✅</div>   | <div align="center">Mariadb failed on an reboot during a evaluation</div> |
