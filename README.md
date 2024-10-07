@@ -7,7 +7,7 @@
 | [libft](./libft/)                 | <div align="center">125✅</div>  |  |
 | [ft_printf](./ft_printf/)         | <div align="center">100✅</div>  |  |
 | [get_next_line](./get_next_line/) | <div align="center">112✅</div>  | <div align="center">Bonus : compilation failed for moulinette</div> |
-| [born2beroot]     | <div align="center">110✅</div>  |  |
+| born2beroot     | <div align="center">110✅</div>  |  |
 | [push_swap](./push_swap/)         | <div align="center">86✅</div>   | <div align="center">not optimised for 500 numbers (need to use rr and rrr)</div> |
 | [fract-ol](./fract-ol/)           | <div align="center">125✅</div>  |  |
 | [pipex](./pipex/)                 | <div align="center">115✅</div>  |  |
